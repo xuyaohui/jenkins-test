@@ -10,6 +10,5 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: jenkins-test-rancher2:1.0
-      pushRemote: true
       registry: 192.168.157.65:8888/jenkins-test
 timeout: 60
