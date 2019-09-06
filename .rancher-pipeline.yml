@@ -1,1 +1,15 @@
+﻿stages:
+- name: build
+  steps:
+  - runScriptConfig:
+      image: maven:latest
+      shellScript: mvn clean package
+- name: publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: jenkins-test-rancher2:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: 192.168.157.65:8888
 timeout: 60
