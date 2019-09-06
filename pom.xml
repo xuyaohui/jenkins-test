@@ -23,6 +23,54 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+    
+       <repositories>
+        <repository>
+            <id>public-adcloud</id>
+            <name>PUBLIC-ADCLOUD</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/maven_public/</url>
+        </repository>
+        <repository>
+            <id>adcloud</id>
+            <name>APICLOUD</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/public-adcloud/</url>
+        </repository>
+        <repository>
+            <id>3rd-party</id>
+            <name>thirdparty</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/thirdparty/</url>
+        </repository>
+
+        <repository>
+            <id>adcloud-proxy</id>
+            <name>adcloud-proxy</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/adcloud/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public-adcloud</id>
+            <name>PUBLIC-ADCLOUD</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/maven_public/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>adcloud</id>
+            <name>APICLOUD</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/public-adcloud/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>3rd-party</id>
+            <name>thirdparty</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/thirdparty/</url>
+        </pluginRepository>
+
+        <pluginRepository>
+            <id>adcloud-proxy</id>
+            <name>adcloud-proxy</name>
+            <url>http://nexus.zj.chinamobile.com:8081/nexus/content/repositories/adcloud/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>
