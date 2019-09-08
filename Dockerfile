@@ -1,11 +1,11 @@
 FROM anapsix/alpine-java:8_server-jre_unlimited
 
 
-RUN mkdir /app/app
+RUN mkdir /app
 
-COPY ./target /app/app
+COPY ./target /app
 
-WORKDIR /app/app
+WORKDIR /app
 
 EXPOSE 8080
 
