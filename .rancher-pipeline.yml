@@ -3,7 +3,9 @@ stages:
   steps:
   - runScriptConfig:
       image: maven:latest
-      shellScript: mvn clean package
+      shellScript: |-
+        mkdir -p /root/.m2 && mv setting.xml /root/.m2
+        mvn clean package
 - name: publish
   steps:
   - publishImageConfig:
