@@ -53,6 +53,17 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven-public</id>
+            <name>maven-public</name>
+            <url>http://192.168.157.65:30069/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
   
 
     <build>
