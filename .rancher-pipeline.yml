@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: p-x2f79-pipeline/jenkins-test-rancher2:v1
+      tag: xuyaohui/jenkins-test:v1
       pushRemote: true
-      registry: 192.168.157.65:8888
+      registry: 192.168.157.65:8888/default/xuyaohui/jenkins-test
 timeout: 60
