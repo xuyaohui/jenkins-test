@@ -5,6 +5,8 @@ stages:
       image: maven:latest
       shellScript: |-
         mkdir -p /root/.m2 && mv setting.xml /root/.m2
+        cd /root/.m2
+        cat setting.xml
         mvn clean package
 - name: publish
   steps:
