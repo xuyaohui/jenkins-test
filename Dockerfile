@@ -1,5 +1,4 @@
-FROM anapsix/alpine-java:8_server-jre_unlimited
-
+FROM 192.168.157.65:8888/jenkins-test/openjdk
 
 RUN mkdir /app
 
