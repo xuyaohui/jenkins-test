@@ -1,17 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: demo-deployment
+  name: jenkins-demo
 spec:
   replicas: 1
   template:
     metadata:
       labels:
         app: jenkins-demo
-        track: stable
     spec:
       containers:
-        - name: demo
+        - name: jenkins-demo
           image: 192.168.157.65:8888/dafault/jenkins-test:v1
           ports:
             - containerPort: 8082
