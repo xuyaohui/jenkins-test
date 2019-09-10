@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: jenkins-demo
-          image: 192.168.157.65:8888/default/jenkins-test:v2
+          image: 192.168.157.65:8888/default/jenkins-test:${CICD_EXECUTION_SEQUENCE}
           ports:
             - containerPort: 8082
 
