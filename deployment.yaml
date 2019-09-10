@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: jenkins-demo
-          image: 192.168.157.65:8888/default/jenkins-test:v1
+          image: 192.168.157.65:8888/default/jenkins-test:v2
           ports:
             - containerPort: 8082
 
